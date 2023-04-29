@@ -1,25 +1,19 @@
 <script lang="ts">
   import Greet from './lib/Greet.svelte'
+
 </script>
 
+<nav class="navbar">
+  <div class="navbar-brand">Open Solver</div>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
 <main class="container">
-  <h1>Welcome to Tauri!</h1>
-
-  <div class="row">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo vite" alt="Vite Logo" />
-    </a>
-    <a href="https://tauri.app" target="_blank">
-      <img src="/tauri.svg" class="logo tauri" alt="Tauri Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank">
-      <img src="/svelte.svg" class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-
-  <p>
-    Click on the Tauri, Vite, and Svelte logos to learn more.
-  </p>
+  
 
   <div class="row">
     <Greet />
@@ -29,11 +23,33 @@
 </main>
 
 <style>
-  .logo.vite:hover {
-    filter: drop-shadow(0 0 2em #747bff);
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #eee;*/
+    padding: 1rem;
   }
-
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00);
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
   }
 </style>

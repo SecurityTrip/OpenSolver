@@ -12,7 +12,7 @@
 
 <div>
   <div class="row">
-    <input id="greet-input" placeholder="Enter a name..." bind:value={name} />
+    <input id="greet-input" placeholder="Wee wee" bind:value={name} />
     <button on:click={greet}>
       Greet
     </button>
