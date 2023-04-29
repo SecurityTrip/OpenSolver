@@ -13,3 +13,6 @@ fn main() {
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
+
+//npm install
+//npm run tauri dev
