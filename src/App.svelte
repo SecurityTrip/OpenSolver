@@ -1,25 +1,24 @@
 <script lang="ts">
   import Greet from './lib/Greet.svelte'
+  import Home from './lib/Home.svelte';
 
+
+  async function settings(){
+    // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
+  }
 </script>
 
 <nav class="navbar">
   <div class="navbar-brand">Open Solver</div>
   <ul class="navbar-nav">
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+    <li class="nav-item">
+      <button on:click={settings}>Settings</button>
+    </li>
   </ul>
 </nav>
 
 <main class="container">
-  
-
-  <div class="row">
-    <Greet />
-  </div>
-
-
+  <Home />
 </main>
 
 <style>
@@ -41,15 +40,5 @@
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-item {
-    margin-left: 1rem;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
   }
 </style>
